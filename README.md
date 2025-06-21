@@ -18,15 +18,8 @@
 - **Flag/Secret Detection:** (Planned) Highlight potential secrets and flags
 
 ## 🏗️ Architecture
-```mermaid
-graph TD
-    A[APK File] --> B[apktool / jadx]
-    B --> C[Extracted Java/Smali Code]
-    C --> D[Python Parser]
-    D --> E[LLM API (GPT-4)]
-    E --> F[Cleaned Code + Explanations]
-    F --> G[UI / CLI Tool]
-```
+
+![Architecture](https://i.imgur.com/1Q9Z1ZB.png)
 
 ## 📦 Folder Structure
 ```
@@ -105,11 +98,3 @@ streamlit run frontend/app.py
 - [ ] Dynamic analysis (frida/logcat)
 - [ ] Flag/secret detection & reporting
 - [ ] Bonus: Obfuscation score, CFG visualization
-
-## 👨‍💼 Credits
-- **Project Lead:** [Your Name]
-- **Mentor:** Thales
-- **Inspired by:** CTFs, real-world reverse engineering, and the power of AI
-
-## 📄 License
-MIT 
