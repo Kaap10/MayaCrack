@@ -2,6 +2,9 @@
 
 ![MayaCrack Banner](https://img.shields.io/badge/AI-Powered-blue?style=for-the-badge&logo=android)
 
+## 🚀 Live Demo
+**Try MayaCrack online:** [https://mayacrack.streamlit.app/](https://mayacrack.streamlit.app/)
+
 ## 🚀 Overview
 **MayaCrack** is a next-generation tool for reverse engineering and deobfuscating Android apps. Leveraging the power of Large Language Models (LLMs) like GPT-4, MayaCrack can:
 - Extract and analyze obfuscated code from APKs
@@ -94,3 +97,7 @@ streamlit run frontend/app.py
 - [ ] Dynamic analysis (frida/logcat)
 - [ ] Flag/secret detection & reporting
 - [ ] Bonus: Obfuscation score, CFG visualization
+
+## 💡 Pro Tips
+- **For online demo, please upload extracted Java/Smali code folders. APK extraction is not supported on Streamlit Cloud.**
+- If you want to support APK extraction, you'll need to run the app on your own server or locally.
