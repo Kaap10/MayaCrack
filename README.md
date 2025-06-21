@@ -17,10 +17,6 @@
 - **Professional UI:** Streamlit dashboard for uploads, code viewing, and AI results
 - **Flag/Secret Detection:** (Planned) Highlight potential secrets and flags
 
-## 🏗️ Architecture
-
-![Architecture](https://i.imgur.com/1Q9Z1ZB.png)
-
 ## 📦 Folder Structure
 ```
 MayaCrack/
@@ -43,7 +39,7 @@ MayaCrack/
 ## ⚙️ Setup & Installation
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/yourusername/MayaCrack.git
+   git clone https://github.com/Kaap10/MayaCrack.git
    cd MayaCrack
    ```
 2. **Install dependencies:**
