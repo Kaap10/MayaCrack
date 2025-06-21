@@ -30,5 +30,5 @@ with col2:
 # Footer
 st.markdown("""
 ---
-<small>Made with ❤️ for reverse engineers & CTFers. Powered by GPT-4.</small>
+<small>Made by team Picado :)</small>
 """, unsafe_allow_html=True) 
