@@ -3,4 +3,6 @@ streamlit
 javalang
 pdfcrowd
 requests
-python-dotenv 
+python-dotenv
+qrcode
+Pillow 
