@@ -43,8 +43,7 @@ def decrypt_flag(enc_hex):
     password = b"0uAlGrzKmaE4IoXjiWG0uOFQ9nEyfXm8"
     salt = b"0uAlGrzKmaE4IoXjiWG0uOFQ9nEyfXm8"
     iterations = 128
-    key_len = 32  # 256 bits
-
+    key_len = 32
     key = PBKDF2(password, salt, dkLen=key_len, count=iterations)
     cipher = AES.new(key, AES.MODE_ECB)
     enc_bytes = hex_to_bytes(enc_hex)
@@ -97,4 +96,15 @@ else:
 st.markdown("""
 ---
 <small>Made by team Picado :)</small>
-""", unsafe_allow_html=True) 
+""", unsafe_allow_html=True)
+
+st.title("Flag Decryptor (Manual)")
+
+enc_flag = st.text_input("Paste encrypted flag (hex):")
+
+if enc_flag:
+    try:
+        flag = decrypt_flag(enc_flag)
+        st.success(f"Decrypted Flag: {flag}")
+    except Exception as e:
+        st.error(f"Error: {e}") 
